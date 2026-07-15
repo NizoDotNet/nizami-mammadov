@@ -1,6 +1,6 @@
 <template>
   <div class="flex min-h-screen flex-col bg-black text-gray-100">
-    <main class="mx-auto container">
+    <main class="mx-auto container 2xl:mt-20.5 xl:mt-10.5 mt-8 p-1">
       <slot />
     </main>
 
