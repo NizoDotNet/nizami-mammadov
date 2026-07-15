@@ -4,7 +4,7 @@ import CardLink from "./CardLink.vue";
 
 <template>
   <div
-    class="bg-white flex flex-col justify-center items-center gap-6 px-5 py-8 rounded-2xl 2xl:max-w-[344px] lg:w-max h-min"
+    class="bg-white flex flex-col justify-center items-center gap-6 px-5 py-8 rounded-2xl 2xl:max-w-[344px] sm:min-w-max h-min"
   >
     <div class="">
       <img

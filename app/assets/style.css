@@ -3,3 +3,6 @@
 @theme {
   --color-background: #151312;
 }
+:root {
+  font-family: Poppins;
+}
