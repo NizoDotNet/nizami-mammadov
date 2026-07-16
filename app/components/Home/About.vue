@@ -1,16 +1,17 @@
 <template>
-  <div class="flex flex-col items-center">
-    <div
-      class="xl:text-9xl md:text-8xl sm:text-5xl text-4xl lg:text-left text-center"
+  <div
+    class="flex flex-col items-center text-center lg:items-start lg:text-left"
+  >
+    <h1
+      class="text-4xl font-bold leading-[0.95] text-white sm:text-5xl md:text-7xl xl:text-9xl"
     >
-      <h1 class="text-white font-bold">SOFTWARE</h1>
-      <h1 class="text-gray-700 font-bold">ENGINEER</h1>
-    </div>
-    <div class="mt-2">
-      <h4 class="lg:text-left text-center">
-        Passionate about creating intuitive and engaging user experiences.
-        Specialize in transforming ideas into beautifully crafted products.
-      </h4>
-    </div>
+      SOFTWARE
+      <span class="block font-bold text-gray-700"> ENGINEER </span>
+    </h1>
+
+    <h4 class="ms-1 mt-4 max-w-md text-gray-200">
+      Passionate about creating intuitive and engaging user experiences.
+      Specialize in transforming ideas into beautifully crafted products.
+    </h4>
   </div>
 </template>
