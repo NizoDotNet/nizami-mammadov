@@ -9,6 +9,6 @@ defineProps<{
     <h2 class="text-white text-6xl sm:text-8xl">
       {{ text }}
     </h2>
-    <span class="text-gray-600">{{ bottomText }}</span>
+    <span class="text-zinc-600">{{ bottomText }}</span>
   </div>
 </template>

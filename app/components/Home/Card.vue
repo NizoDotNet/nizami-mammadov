@@ -18,7 +18,7 @@ import CardLink from "./CardLink.vue";
         <h1 class="font-bold text-black text-4xl">Nizami Mammadov</h1>
       </div>
       <div class="w-[300px] lg:mb-[30px] md:mb-[20px] mb-4">
-        <p class="text-center text-gray-500">
+        <p class="text-center text-zinc-500">
           I am super puper engineer. Lalalala i want u to love me. ALlalalal I
           want to live
         </p>

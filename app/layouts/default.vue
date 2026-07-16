@@ -1,5 +1,5 @@
 <template>
-  <div class="flex min-h-screen flex-col bg-black text-gray-100">
+  <div class="flex min-h-screen flex-col bg-black text-zinc-100">
     <main class="mx-auto container p-1">
       <Navigation
         class="fixed top-10 left-1/2 -translate-x-1/2 -translate-y-1/2"
