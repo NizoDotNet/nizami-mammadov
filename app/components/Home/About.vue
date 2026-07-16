@@ -13,11 +13,11 @@ import AboutCard from "./AboutCard.vue";
       <span class="block font-bold text-gray-700"> ENGINEER </span>
     </h1>
 
-    <h4 class="ms-1 mt-4 max-w-md text-gray-200">
+    <h4 class="ms-1 mt-4 max-w-md text-gray-400">
       Passionate about creating intuitive and engaging user experiences.
       Specialize in transforming ideas into beautifully crafted products.
     </h4>
-    <div class="mt-9 flex md:gap-10 gap-6">
+    <div class="mt-9 flex md:gap-10 gap-6 justify-center">
       <AboutCard text="+12" bottom-text="Years of experience" />
       <AboutCard text="+45" bottom-text="Projects completed" />
       <AboutCard text="+40" bottom-text="World Wide Clients" />

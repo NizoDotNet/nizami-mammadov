@@ -5,10 +5,10 @@ defineProps<{
 }>();
 </script>
 <template>
-  <div class="flex flex-col items-center w-min uppercase font-medium">
-    <h2 class="text-white text-2xl md:text-4xl xl:text-7xl">
+  <div class="flex flex-col items-center w-min uppercase font-bold">
+    <h2 class="text-white text-6xl sm:text-8xl">
       {{ text }}
     </h2>
-    <span class="text-gray-200">{{ bottomText }}</span>
+    <span class="text-gray-600">{{ bottomText }}</span>
   </div>
 </template>
