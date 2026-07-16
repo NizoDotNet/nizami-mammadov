@@ -1,6 +1,9 @@
 <template>
   <div class="flex min-h-screen flex-col bg-black text-gray-100">
     <main class="mx-auto container 2xl:mt-20.5 xl:mt-10.5 mt-8 p-1">
+      <Navigation
+        class="fixed bottom-1 left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:mt-20.5 xl:mt-10.5 mt-8"
+      />
       <slot />
     </main>
 
@@ -13,9 +16,6 @@
       </p>
     </footer>
   </div>
-  <Navigation
-    class="fixed bottom-1 left-1/2 -translate-x-1/2 -translate-y-1/2"
-  />
 </template>
 
 <script setup></script>

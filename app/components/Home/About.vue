@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import AboutCard from "./AboutCard.vue";
+</script>
+
 <template>
   <div
     class="flex flex-col items-center text-center lg:items-start lg:text-left"
@@ -13,5 +17,10 @@
       Passionate about creating intuitive and engaging user experiences.
       Specialize in transforming ideas into beautifully crafted products.
     </h4>
+    <div class="mt-9 flex md:gap-10 gap-6">
+      <AboutCard text="+12" bottom-text="Years of experience" />
+      <AboutCard text="+45" bottom-text="Projects completed" />
+      <AboutCard text="+40" bottom-text="World Wide Clients" />
+    </div>
   </div>
 </template>
