@@ -22,13 +22,13 @@
     </div>
     <div class="mt-14 lg:mt-28 flex flex-col gap-14 lg:gap-28">
       <HomeSection upper-text="RECENT" bottom-text="PROJECTS">
-        <div class="size-40 bg-amber-300"></div>
+        <HomeSectionRecentProject></HomeSectionRecentProject>
       </HomeSection>
       <HomeSection upper-text="12 YEARS OF" bottom-text="EXPERIENCE">
-        <div class="size-40 bg-amber-300"></div>
+        <HomeSectionExperience> </HomeSectionExperience>
       </HomeSection>
       <HomeSection upper-text="TECH" bottom-text="STACK">
-        <div class="size-40 bg-amber-300"></div>
+        <HomeSectionTechStack></HomeSectionTechStack>
       </HomeSection>
     </div>
   </div>
