@@ -3,28 +3,54 @@ import CardLink from "./CardLink.vue";
 </script>
 
 <template>
-  <div class="relative group w-full max-w-[320px] sm:max-w-[340px] lg:max-w-[320px]">
-    <div
-      class="absolute -inset-[1px] rounded-3xl bg-gradient-to-br from-white/40 via-white/10 to-transparent opacity-70 blur-[0.5px] transition-opacity duration-500 group-hover:opacity-100"
-    ></div>
-    <div
-      class="relative flex flex-col items-center text-center gap-5 px-6 py-7 sm:px-7 sm:py-8 rounded-3xl bg-gradient-to-b from-white/[0.12] to-white/[0.04] backdrop-blur-xl border border-white/10 shadow-[0_60px_120px_-80px_rgba(255,255,255,0.5)] transition-transform duration-500 group-hover:-translate-y-1"
+  <div class="relative group w-full max-w-[300px] sm:max-w-[320px] lg:max-w-[300px]">
+    <svg
+      class="absolute inset-0 h-full w-full rounded-3xl"
+      viewBox="0 0 320 420"
+      preserveAspectRatio="none"
+      aria-hidden="true"
     >
-      <div class="relative">
-        <div
-          class="absolute -inset-1 rounded-2xl bg-gradient-to-br from-white/30 to-white/0 blur-lg opacity-60 group-hover:opacity-90 transition-opacity duration-500"
-        ></div>
+      <defs>
+        <linearGradient id="cardStroke" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="rgba(255,255,255,0.9)" />
+          <stop offset="100%" stop-color="rgba(255,255,255,0.5)" />
+        </linearGradient>
+      </defs>
+      <rect
+        x="1"
+        y="1"
+        width="318"
+        height="418"
+        rx="24"
+        ry="24"
+        fill="white"
+        stroke="url(#cardStroke)"
+        stroke-width="1"
+      />
+      <path
+        d="M -20 60 C 40 20, 120 10, 200 40 C 280 70, 340 40, 360 30 L 360 160 C 300 140, 220 150, 140 180 C 60 210, -10 190, -20 170 Z"
+        fill="rgba(0,0,0,0.03)"
+      />
+      <path
+        d="M -10 320 C 60 290, 150 280, 240 310 C 320 340, 380 320, 400 310 L 400 440 L -30 440 Z"
+        fill="rgba(0,0,0,0.02)"
+      />
+    </svg>
+    <div
+      class="relative flex flex-col items-center text-center gap-5 px-6 py-7 sm:px-7 sm:py-8 transition-transform duration-300 group-hover:-translate-y-1"
+    >
+      <div>
         <img
-          class="relative object-cover rounded-2xl w-[240px] h-[190px] sm:w-[260px] sm:h-[210px]"
+          class="object-cover rounded-2xl w-[230px] h-[185px] sm:w-[250px] sm:h-[200px]"
           src="~/assets/imgs/my-photo.JPG"
           alt="Nizami Mammadov"
         />
       </div>
-      <div class="flex flex-col items-center gap-3">
-        <h1 class="font-bold text-white text-2xl sm:text-3xl tracking-tight">
+      <div class="flex flex-col items-center gap-2">
+        <h1 class="font-bold text-black text-2xl sm:text-3xl tracking-tight">
           Nizami Mammadov
         </h1>
-        <p class="max-w-[260px] text-sm leading-relaxed text-zinc-300">
+        <p class="max-w-[250px] text-sm leading-relaxed text-zinc-600">
           Software Engineer crafting clean, intuitive experiences across web and
           product.
         </p>
