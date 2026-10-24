@@ -11,13 +11,13 @@ const projects: Project[] = [
     name: "Mastercard Omnichannel Platform",
     description:
       "Developed an omnichannel chatbot platform that handles customer requests through Telegram and WhatsApp, manages conversational flows, and routes customers to the appropriate support channels. The platform includes a support center module that directs customer conversations to human operators when assistance is required.",
-    tags: [],
+    tags: ["C#", "PostgreSQL", "Docker", "CI/CD", "IIS"],
   },
   {
     name: "AZAL Omnichannel Platform",
     description:
-      "Developed omnichannel conversation flows for Telegram and WhatsApp, with support routing based on the customer's selected service. Integrated Zendesk to forward messages to the appropriate support team when customers select 24/7 support. Requests from customers selecting the concierge service are routed to the internal support team instead.",
-    tags: [],
+      "Developed omnichannel conversation flows for Telegram and WhatsApp, with service-based routing. Integrated Zendesk to forward messages to the appropriate support team when customers select 24/7 support. Requests from customers selecting the concierge service are routed to the internal support team instead.",
+    tags: ["C#", "PostgreSQL", "Docker", "CI/CD"],
   },
   {
     name: "Mock Payment Microservice System",
