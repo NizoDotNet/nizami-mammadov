@@ -1,7 +1,6 @@
 <script setup lang="ts">
 interface Project {
   name: string;
-  tagline: string;
   description: string;
   tags: string[];
   link?: string;
@@ -9,25 +8,40 @@ interface Project {
 
 const projects: Project[] = [
   {
-    name: "Azal Omnichannel",
-    tagline: "Unified support platform for AZAL Miles concierge users",
+    name: "Mastercard Omnichannel Project",
     description:
-      "Centralized system consolidating customer requests from WhatsApp, Telegram, Facebook and web widgets into a single support hub. Currently integrating Zendesk for 24/7 coverage, with our team owning dedicated concierge-level support.",
-    tags: ["C#", "ASP.NET", "PostgreSQL", "Zendesk API"],
+      "Contributing to a Mastercard-related project. More details about the system, responsibilities, and technologies will be added when confirmed.",
+    tags: [],
   },
   {
-    name: "Mastercard Concierge",
-    tagline: "Multi-channel support system for Mastercard concierge services",
+    name: "AZAL Omnichannel Project",
     description:
-      "A parallel build to the AZAL project for Mastercard cardholders. Integrates a third-party platform for concierge escalations, while our team owns round-the-clock frontline support across every channel.",
-    tags: ["C#", "ASP.NET", "SQL Server"],
+      "Working on an omnichannel solution related to AZAL. More details about the platform, responsibilities, and technologies will be added when confirmed.",
+    tags: [],
   },
   {
-    name: "Sano CRM",
-    tagline: "Patient intake and doctor assignment system",
+    name: "Mock Payment Microservice System",
     description:
-      "A CRM built for a psychological care center to streamline patient onboarding — capturing intake requests and automatically routing patients to the right doctor by availability and specialty.",
-    tags: ["Vue", "CRM"],
+      "A standalone payment system built to model production payment workflows. It separates order, payment, and notification flows using asynchronous RabbitMQ messaging. It uses Keycloak for service-to-service OAuth2/OpenID Connect authentication, with Docker and GitLab CI/CD for deployment workflows.",
+    tags: ["C#", "ASP.NET Core", "RabbitMQ", "Keycloak", "SQL Server", "Docker", "GitLab CI/CD"],
+  },
+  {
+    name: "YouBase Event Platform",
+    description:
+      "An event platform built with ASP.NET Core and Vue.js. The project uses CQRS with MediatR to separate read and write operations, Redis for caching, and SignalR for real-time chat.",
+    tags: ["ASP.NET Core", "C#", "Vue.js", "MediatR", "Redis", "SignalR"],
+  },
+  {
+    name: "Dormitory Management System",
+    description:
+      "A system designed to automate multi-step dormitory workflows and student registrations. The system handled more than 1,000 concurrent student registrations using an asynchronous RabbitMQ pipeline.",
+    tags: ["C#", "ASP.NET Core", "RabbitMQ"],
+  },
+  {
+    name: "ShekiSoccer Platform",
+    description:
+      "A football platform for more than 1,000 active fans. Backend work included an HTTP-header-based dynamic translation system to reduce client-side localization overhead.",
+    tags: ["ASP.NET Core", "C#"],
   },
 ];
 </script>
@@ -41,7 +55,6 @@ const projects: Project[] = [
           :key="project.name"
           class="group grid grid-cols-1 gap-6 border-t border-neutral-800 py-10 sm:py-12 md:grid-cols-[280px_1fr] md:gap-12 last:border-b transition-colors duration-300 hover:bg-white/5 px-2 sm:px-4"
         >
-          <!-- Left: accent block + name -->
           <div class="flex items-start gap-5">
             <div
               class="h-16 w-4 shrink-0 bg-[#FFD447] transition-transform duration-300 group-hover:scale-y-110"
@@ -50,13 +63,9 @@ const projects: Project[] = [
               <h3 class="text-2xl font-extrabold text-white md:text-3xl">
                 {{ project.name }}
               </h3>
-              <p class="mt-2 text-sm text-neutral-400">
-                {{ project.tagline }}
-              </p>
             </div>
           </div>
 
-          <!-- Right: description + tags -->
           <div class="flex flex-col justify-between gap-6">
             <p class="text-base leading-relaxed text-neutral-300">
               {{ project.description }}

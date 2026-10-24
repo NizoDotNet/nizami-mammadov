@@ -7,11 +7,19 @@ interface StackGroup {
 const stack: StackGroup[] = [
   {
     label: "Backend",
-    items: ["C#", "ASP.NET", "EF Core", "Dapper", "PostgreSQL", "SQL Server"],
+    items: ["C#", ".NET", "ASP.NET Core", "REST APIs", "Entity Framework Core", "Dapper", "LINQ"],
+  },
+  {
+    label: "Architecture and messaging",
+    items: ["Clean Architecture", "Modular Monolith", "Microservices", "CQRS with MediatR", "RabbitMQ", "SignalR", "Redis"],
+  },
+  {
+    label: "Databases and infrastructure",
+    items: ["PostgreSQL", "SQL Server", "AWS", "MinIO", "Docker", "GitLab CI/CD", "Git"],
   },
   {
     label: "Frontend",
-    items: ["Vue", "Nuxt", "Nuxt UI", "Tailwind CSS"],
+    items: ["JavaScript", "TypeScript", "Vue.js", "Angular", "ASP.NET MVC"],
   },
 ];
 </script>
