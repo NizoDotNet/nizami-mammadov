@@ -17,8 +17,8 @@ const experience: Experience[] = [
       "Support a platform handling more than 100,000 messages and 20,000 support tickets per month across channels.",
       "Built a file management service using ASP.NET Core, AWS, and MinIO for chat attachments and documents.",
       "Write and optimize stored procedures and queries in SQL Server and PostgreSQL, including pagination and filtering for message and ticket retrieval.",
-      "Contributing to the Mastercard Omnichannel Project.",
-      "Working on the AZAL Omnichannel Project.",
+      "Contributed to the Mastercard Omnichannel Platform (Telegram/WhatsApp chatbot flows, routing, and support center module).",
+      "Developed AZAL Omnichannel Platform conversation flows for Telegram and WhatsApp with service-based routing and Zendesk integration.",
     ],
   },
   {
