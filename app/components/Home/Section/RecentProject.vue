@@ -39,13 +39,13 @@ const projects: Project[] = [
         <article
           v-for="project in projects"
           :key="project.name"
-          class="group grid grid-cols-1 gap-6 border-t border-neutral-800 py-10 md:grid-cols-[280px_1fr] md:gap-12 last:border-b"
+          class="group grid grid-cols-1 gap-6 border-t border-neutral-800 py-10 sm:py-12 md:grid-cols-[280px_1fr] md:gap-12 last:border-b transition-colors duration-300 hover:bg-white/5 px-2 sm:px-4"
         >
           <!-- Left: accent block + name -->
           <div class="flex items-start gap-5">
             <div
               class="h-16 w-4 shrink-0 bg-[#FFD447] transition-transform duration-300 group-hover:scale-y-110"
-            />
+            ></div>
             <div>
               <h3 class="text-2xl font-extrabold text-white md:text-3xl">
                 {{ project.name }}

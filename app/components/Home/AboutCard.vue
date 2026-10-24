@@ -5,7 +5,7 @@ defineProps<{
 }>();
 </script>
 <template>
-  <div class="flex flex-col items-center w-min uppercase font-bold">
+  <div class="flex flex-col items-center w-min uppercase font-bold transition-transform duration-300 hover:scale-105">
     <h2 class="text-white text-6xl sm:text-8xl">
       {{ text }}
     </h2>

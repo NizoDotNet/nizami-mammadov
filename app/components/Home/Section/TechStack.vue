@@ -23,7 +23,7 @@ const stack: StackGroup[] = [
         <div
           v-for="group in stack"
           :key="group.label"
-          class="grid grid-cols-1 gap-6 border-t border-neutral-800 py-10 md:grid-cols-[280px_1fr] md:gap-12 last:border-b"
+          class="group grid grid-cols-1 gap-6 border-t border-neutral-800 py-10 sm:py-12 md:grid-cols-[280px_1fr] md:gap-12 last:border-b transition-colors duration-300 hover:bg-white/5 px-2 sm:px-4"
         >
           <!-- Left: accent bar + group label -->
           <div class="flex items-start gap-5">

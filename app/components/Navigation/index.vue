@@ -9,31 +9,31 @@ type LinkProperties = {
 const links: LinkProperties[] = [
   {
     path: "/",
-    icon: "i-material-symbols-home-outline",
+    icon: "i-lucide-home",
   },
   {
-    path: "/projects",
-    icon: "i-material-symbols-folder-outline-rounded",
+    path: "/#projects",
+    icon: "i-lucide-folder-code",
   },
   {
-    path: "/tools",
-    icon: "i-iconoir-tools",
+    path: "/#tools",
+    icon: "i-lucide-wrench",
   },
-  {
-    path: "/blog",
-    icon: "i-carbon-blog",
-  },
+  // {
+  //   path: "/#blog",
+  //   icon: "i-lucide-file-text",
+  // },
 ];
 </script>
 
 <template>
-  <div
-    class="flex justify-center gap-4 items-center bg-background px-4 py-2 rounded-2xl"
+  <nav
+    class="flex justify-center gap-1 sm:gap-2 items-center bg-background/80 backdrop-blur px-2 sm:px-3 py-1.5 rounded-full border border-white/10 shadow-lg shadow-black/30"
   >
-    <div v-for="l in links" class="flex justify-center items-center">
+    <div v-for="l in links" :key="l.path" class="flex justify-center items-center">
       <Link :path="l.path">
-        <UIcon class="size-6" :name="l.icon"></UIcon>
+        <UIcon class="size-5 sm:size-6" :name="l.icon"></UIcon>
       </Link>
     </div>
-  </div>
+  </nav>
 </template>
